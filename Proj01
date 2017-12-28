@@ -1,0 +1,24 @@
+#objects
+rod_str = input("Input rods: ")
+
+rod_float = float(rod_str)
+
+rod_int = rod_float
+print("You input",rod_int,"rods.")
+
+#math
+meters = (rod_float * 5.0292)
+furlong = (rod_float / 40)
+mile = (meters / 1609.34)
+foot = (meters / 0.3048)
+avgws = ((mile / 3.1) * 1000)
+walkt = ((mile * 60) / 3.1)
+
+#print
+print()
+print("Conversions")
+print("Meters:",round(meters, 3))
+print("Feet:",round(foot, 3))
+print("Miles:",round(mile, 3))
+print("Furlongs:",round(furlong, 3))
+print("Minutes to walk", rod_float,"rods:",round(walkt, 3))
